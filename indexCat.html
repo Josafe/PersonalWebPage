@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Curs CSS </title>
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+       <!-- <script src="js/script.js"></script> -->
+    </head>
+
+    <body>
+        <!-- <h1>Hola mundo</h1> --> 
+
+        <header class="hero">
+            <nav class="nav container"> 
+
+                <div class="nav__logo">
+                    <h2 class="nav__title"> Desenvolupador d'aplicacions multiplataforma & IA i BIG DATA </h2>
+                </div>
+
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inici</a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="about.html" class="nav__links">Sobre mi:</a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacte</a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Idioma</a>
+
+                        <img src="images\Flag_of_Catalonia.svg" alt="" class="nav__image" id="catalanFlag">
+                        <img src="images\Flag_of_the_United_Kingdom_(1-2).svg" alt= "" class="nav__image" id="englishFlag">
+                        <img src="images\Flag_of_Spain.svg.png" alt= "" class="nav__image" id="castellanFlag"> 
+                        
+                        <script>
+                            // Obtén la referencia al elemento de la imagen por su ID
+                            var catalanFlag = document.getElementById("catalanFlag");
+                            var englishFlag = document.getElementById("englishFlag");
+                            var castellanFlag = document.getElementById("castellanFlag");
+
+                            // Agrega un evento de clic al elemento de la imagen
+                            catalanFlag.addEventListener("click", function() {
+                                // Redirige a la página en otro idioma
+                                window.location.href = "indexCat.html";
+                            });
+
+                            englishFlag.addEventListener("click", function() {
+                                // Redirige a la página en otro idioma
+                                window.location.href = "indexIng.html";
+                            });
+                            
+                            castellanFlag.addEventListener("click", function() {
+                                // Redirige a la página en otro idioma
+                                window.location.href = "indexEsp.html";
+                            });
+                        </script>
+                    </li>
+
+                    <img src="./images/close.svg" alt= "" class="nav__close"> 
+                    
+                </ul>
+
+                    <div class="nav__menu">
+                        <img src="./images/menu.svg" alt= "" class="nav__img">
+                    </div>
+            </nav>
+
+            <section class="hero__container container">
+                <h1 class="hero__title"> Resum </h1>
+                <p class="hero__paragraph"> Sóc un apassionat desenvolupador back-end amb un ferm compromís de continuar
+                    aprenent i adquirint experiència al camp. La meva capacitat d'adaptació a
+                    diferents horaris i metodologies de treball em permet treballar eficaçment a
+                    equips col·laboratius sota pressió. Tinc un coneixement mitjà en llenguatges de
+                    programació web i un ampli coneixement en desenvolupament d'aplicacions i bases de dades, a més de
+                    habilitats en eines com Excel i Wordpress. També compto amb
+                    carnet de conduir i sóc un autodidacta dedicat tant al meu entorn laboral com
+                    en projectes personals. </p>
+
+                    <a href="https://drive.google.com/drive/folders/1o2QOglr1ao-qivlEgA9H69tC6qaRLtPg?usp=sharing" class="cta">CVitae</a>
+                    <a href="https://github.com/Josafe" class="cta">GitHub</a>
+            </section>
+        </header>
+
+        <main>
+            <section class="container about">
+                <img src="./images/person.svg" class="about__icon">
+                <h2 class="subtitle"> Que vols saber sobre mi? </h2>
+            
+                <div class="about__main">
+
+                    <article class="main__icons">
+                        <img src="./images/computer.svg" class="about__icon">
+                    <details>
+                            <summary>
+                                <h3 class="about__title"> Llenguatges de programació web </h3>
+                            </summary>
+                        <p class="about__paragraph">  
+                        <b>HTML:</b>
+                            Tinc experiència intermitja en el desenvolupament de pàgines web utilitzant HTML (HyperText Markup Language), el llenguatge estàndard per a la creació de contingut web. He treballat en projectes que abasten des de la creació de pàgines web estàtiques fins a la implementació d'estructures complexes i semàntiques utilitzant les darreres especificacions d'HTML.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>CSS:</b>
+                            Disposo d'experiència intermèdia en lús de CSS (Cascading Style Sheets) per al disseny i la presentació de pàgines web. He treballat en projectes que utilitzen CSS per aplicar estils visuals a pàgines web, incloent-hi la creació de dissenys responsius, animacions i efectes visuals per millorar l'experiència de l'usuari.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>JavaScript:</b>
+                        Tinc una experiència lleugera en el desenvolupament d'aplicacions web interactives utilitzant JavaScript, un llenguatge de programació d'alt nivell i multiparadigma. He treballat en projectes que utilitzen JavaScript per afegir interactivitat a pàgines web i manipular el DOM (Document Object Model).
+                            <hr class="separador"></hr>                        <p class="about__paragraph">  
+                            <b>TypeScript:</b>
+                            Disposo d'una lleugera experiència en l'ús de TypeScript, un superset de JavaScript que afegeix tipat estàtic opcional i altres característiques avançades al llenguatge. He treballat en projectes que utilitzen TypeScript per millorar la qualitat i mantenibilitat del codi JavaScript, especialment en grans bases de codi i equips de desenvolupament col·laboratiu.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>Angular:</b>
+                            Compto amb una lleugera experiència en el desenvolupament d'aplicacions web utilitzant Angular, un framework de desenvolupament d'aplicacions de codi obert desenvolupat per Google. He treballat en projectes que utilitzen Angular per crear aplicacions web d'una sola pàgina (SPA) amb arquitectures escalables i modularitzades. Estic familiaritzat amb els conceptes clau d'Angular, incloent-hi la creació de components, la injecció de dependències i la gestió de l'estat de l'aplicació.</p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>XML:</b>
+                            Disposo d'una experiència intermèdia en l'ús d'XML (eXtensible Markup Language) per a la representació de dades estructurades en forma de text llegible tant per a humans com per a màquines. He treballat en projectes que utilitzen XML per a l'intercanvi de dades entre diferents sistemes i la definició de llenguatges de marcatge personalitzats.                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>PHP:</b>
+                            Compto amb una lleugera experiència en el desenvolupament d'aplicacions web dinàmiques utilitzant PHP, un llenguatge de scripting del costat del servidor àmpliament utilitzat en el desenvolupament web. He treballat en projectes que utilitzen PHP per a la creació de llocs web dinàmics, aplicacions web basades en bases de dades i sistemes de gestió de contingut (CMS) com ara WordPress i Drupal.                        </p>
+                    </details>
+                    </article>
+
+                    <article class="main__icons2">
+                        
+                        <img src="./images/mobile.svg" class="about__icon">
+                        <details>
+                            <summary>
+                                <h3 class="about__title"> Llenguatges de programació </h3>
+                            </summary>
+                        <p class="about__paragraph">
+                        <b>Java:</b>
+                            Tinc experiència sòlida en el desenvolupament d'aplicacions utilitzant Java, un llenguatge de programació àmpliament utilitzat a la indústria del programari. He treballat en projectes que abasten des d'aplicacions d'escriptori fins a aplicacions web, fent servir frameworks com Spring i Hibernate. Estic familiaritzat amb els principis de la programació orientada a objectes, així com amb la creació d'aplicacions escalables i robustes a Java.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>Python:</b>
+                            Disposo d'una experiència lleugera en l'ús de Python, un llenguatge de programació versàtil i poderós. He treballat en una varietat de projectes utilitzant Python per al desenvolupament de seqüències, aplicacions web, anàlisi de dades i aprenentatge automàtic. Estic familiaritzat amb l'ecosistema de Python, incloent biblioteques populars.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>C#:</b>
+                            Compto amb una lleugera experiència en el desenvolupament d'aplicacions utilitzant C#, un llenguatge de programació àmpliament utilitzat en el desenvolupament de programari de Microsoft. He treballat en projectes que van des d'aplicacions d'escriptori fins a aplicacions mòbils i jocs, fent servir frameworks com .NET i Unity.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>Flutter:</b>
+                            Tinc experiència intermèdia en el desenvolupament d'aplicacions multiplataforma fent servir Flutter, un framework de codi obert desenvolupat per Google. He treballat en projectes que utilitzen Flutter per crear aplicacions mòbils amb interfícies dusuari atractives i dalt rendiment. Estic familiaritzat(a) amb la creació de ginys personalitzats, la gestió de l'estat de l'aplicació i la integració de serveis externs en aplicacions Flutter.                       </p>
+                       <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>Dart:</b>
+                            Disposo d'experiència intermèdia en lús de Dart, el llenguatge de programació utilitzat en el desenvolupament daplicacions amb Flutter. He treballat en projectes que involucren el desenvolupament d'aplicacions mòbils i web utilitzant Dart, tant al costat del client com al costat del servidor. Estic familiaritzat(a) amb les característiques del llenguatge Dart, incloent-hi el sistema de tipus estàtics i el suport per a programació orientada a objectes i programació funcional.                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                        <b>Kotlin:</b>
+                            Tinc una lleugera experiència en el desenvolupament d'aplicacions Android utilitzant Kotlin, un llenguatge de programació modern desenvolupat per JetBrains. He treballat en projectes que utilitzen Kotlin per desenvolupar aplicacions natives d'Android, aprofitant les característiques del llenguatge com la seguretat del tipus nul i la concisió del codi. Estic familiaritzat amb les millors pràctiques de desenvolupament a Kotlin i la seva integració amb l'entorn de desenvolupament d'Android Studio.                        </p>
+                        </details>
+                    </article>
+
+                    <article class="main__icons3">
+                        <img src="./images/database.svg" class="about__icon">
+                        <details>
+                            <summary>
+                                <h3 class="about__title"> Bases de dades </h3>
+                            </summary>
+                        <p class="about__paragraph">
+                        <b>PostgreSQL (PSQL):</b>
+                        Tinc bona experiència en l'ús de PostgreSQL, també conegut com a PSQL, com un sistema de gestió de bases de dades relacional de codi obert. He treballat en projectes que utilitzen PostgreSQL per emmagatzemar i administrar dades en entorns de desenvolupament d'aplicacions web i programari en general. Estic familiaritzat amb la creació de bases de dades, l'escriptura de consultes SQL avançades, la configuració d'índexs per millorar el rendiment i la implementació de funcions i procediments emmagatzemats a PostgreSQL.                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>MySQL:</b>
+                        Disposo d'experiència en lús de MySQL com a sistema de gestió de bases de dades relacionals. He treballat en projectes que utilitzen MySQL com el motor de base de dades principal, tant per a aplicacions web com per a aplicacions descriptori. Estic familiaritzat amb la creació de bases de dades, l'optimització de consultes i l'administració d'usuaris i permisos en entorns MySQL.                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>SQLite:</b>
+                        Compto amb una lleugera experiència en l'ús de SQLite com a sistema de gestió de bases de dades relacionals embegut. He treballat en projectes que utilitzen SQLite en aplicacions mòbils i descriptori on es requereix una base de dades local lleugera i de fàcil integració. Estic familiaritzat(a) amb la creació de taules, la manipulació de dades i lús de consultes SQL en entorns SQLite.                    </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>Firebase:</b>
+                        Tinc una lleugera experiència en l'ús de Firebase com a plataforma de desenvolupament d'aplicacions mòbils i web que inclou un servei de base de dades a temps real, Firestore. He treballat en projectes que fan servir Firebase per emmagatzemar i sincronitzar dades en temps real entre clients i servidors. Estic familiaritzat(a) amb la configuració de bases de dades al Firebase, l'autenticació d'usuaris i l'ús d'altres característiques ofertes per aquesta plataforma, com l'emmagatzematge de fitxers i les funcions al núvol.                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>CloudSQL:</b>
+                        Disposo d'una lleugera experiència en l'ús de CloudSQL, un servei de bases de dades relacional completament administrat ofert per Google Cloud Platform. He treballat en projectes que utilitzen CloudSQL per implementar bases de dades MySQL i PostgreSQL al núvol. Estic familiaritzat(a) amb la configuració i l'administració d'instàncies de bases de dades al CloudSQL, la realització de còpies de seguretat i la configuració d'accessos segurs a la base de dades.                        </p>
+                        </details>
+                    </article>
+
+                    <article class="main__icons4">
+                        <img src="./images/terminal.svg" class="about__icon">
+                        <details>
+                            <summary>
+                                <h3 class="about__title"> IDES </h3>
+                            </summary>
+                        <p class="about__paragraph">
+                        <b>Eclipse:</b>
+                        Tinc experiència sòlida en l'ús d'Eclipse com a entorn de desenvolupament integrat (IDE). He treballat en projectes fent servir Eclipse per desenvolupar aplicacions en Java i altres llenguatges compatibles. La meva experiència inclou la configuració de projectes, la depuració de codi, la gestió de versions utilitzant plugins com Git, i el desenvolupament d'interfícies d'usuari mitjançant l'ús de frameworks com SWT i JavaFX.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>IntelliJ IDEA:</b>
+                        Compto amb experiència lleugera en l'ús d'IntelliJ IDEA com a principal entorn de desenvolupament integrat (IDE). He treballat en una varietat de projectes utilitzant IntelliJ, incloent-hi aplicacions Java, Kotlin i altres llenguatges compatibles. Estic familiaritzat(a) amb les seves potents característiques, com ara la refactorització de codi, la navegació ràpida entre classes i la integració amb eines de construcció com Maven i Gradle.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>PyCharm:</b>
+                        Disposo d'una lleugera experiència en l'ús de PyCharm com el meu IDE preferit per al desenvolupament d'aplicacions a Python. He treballat en projectes utilitzant PyCharm per desenvolupar scripts, aplicacions web i projectes de ciència de dades a Python. Estic familiaritzat(a) amb les seves característiques específiques per a Python, com la finalització de codi intel·ligent, la depuració interactiva i el suport per a virtualenv i comta environments.                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                        <b>Visual Studio Code:</b>
+                        Tinc experiència significativa en lús de Visual Studio Code com el meu editor de codi principal. He treballat en una varietat de projectes utilitzant Visual Studio Code per desenvolupar aplicacions web, aplicacions mòbils, scripts i projectes de desenvolupament de programari en general. Estic familiaritzat amb la seva àmplia gamma d'extensions que proporcionen suport per a una varietat de llenguatges de programació i tecnologies.                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                        <b>Android Studio</b>
+                        Compto amb experiència sòlida en lús dAndroid Studio com el meu IDE principal per al desenvolupament daplicacions mòbils en Android. He treballat en projectes utilitzant Android Studio per crear aplicacions natives d'Android, des de la configuració del projecte fins al disseny d'interfícies d'usuari i la implementació de funcionalitats específiques d'Android. Estic familiaritzat amb el desenvolupament utilitzant Java i Kotlin, així com amb l'ús d'eines de desenvolupament d'Android com l'Android SDK i l'emulador d'Android.                        </p>
+                        </details>
+                    </article>
+                </div>
+          
+                <div class="about__main">
+
+                    <article class="main__icons5">
+                        <img src="./images/car.svg" class="about__icon">
+                        <details>
+                            <summary> 
+                                <h3 class="about__title"> Opcions de mobilitat </h3> 
+                            </summary>
+                            <p class="about__paragraph">
+                                Compto amb carnet de conduir i vehicle propi, encara que no apte per circular al centre de Barcelona a causa de restriccions ambientals. Estic disposat a desplaçar-me fora de la ciutat si cal per a la feina. A més, estic obert a la possibilitat de fer servir un vehicle empresarial amb etiqueta verda si està disponible. En cas contrari, tinc l'opció de fer servir la meva llicència de conduir per desplaçar-me des del meu poble.                            </p>
+                        </details>
+                    </article>
+
+                    <article class="main__icons6">
+                        <img src="./images/experience.svg" class="about__icon"> 
+                        <details>
+                        <summary><h3 class="about__title"> Experiencia & formació </h3></summary>
+                        <p class="about__paragraph">
+                        <b>Desenvolupador multiplataforma:</b>
+                        Dokuos
+                        Desenvolupament cross-platform.
+                        Muntatge i manteniment de panells intel·ligents i interactius
+                        Manteniment i reparació dequips de lempresa i particulars.
+                        Ús de Node, JavaScript, PHP, flutter, dart i MySQL per crear una app
+                        de gestió remota de totems interactius.
+                        Ús d'eines d'edició d'imatge i disseny.
+                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                            <b>Gestor de bases de dades:</b>
+                            Rehau S.A
+                            Gestió de bases de dades a nivell multinacional (ESP, PT)
+                            Ús de CRM i ERP de l'empresa
+                            Modificació de permisos dusuaris, empreses i particulars.
+                            Actualització de base de dades segons les noves lleis estipulades.
+                            Ús d'Excel per actualitzar dades obsoletes.
+                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                            <b>Tècnic informàtic:</b>
+                            InfoConnexions S.L
+                            Serveis de tècnic informàtic.
+                            Actualitzar i mantenir S.O
+                            Instal·lació i manteniment de S.O i aplicacions
+                            Manteniment i muntatge de maquinari Excel
+                            Gestió de bbdd.
+                        </p>
+                        <hr class="separador"></hr>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                            <b>CFGM Sistemes microinformàtics i xarxes: </b>
+                            <br> </br>
+                            Promoció 2017 - 2019
+                            <br> </br>
+                            Instal·lar, configurar i mantenir sistemes microinformàtics, xarxes locals, programari bàsic i d'aplicació                            <br> </br>
+                            Executar procediments per a la recuperació de dades i aplicacions davant errors i pèrdues de dades al sistema                            <br> </br>
+                            Elaborar documentació tècnica i administrativa del sistema, formar part del suport informàtic d'organitzacions o entitats de qualsevol mida i sector.                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                            <b>CFGS Disseny d'aplicacions multiplataforma: </b>
+                            <br> </br>
+                            Promoció 2020 - 2022
+                            <br> </br>
+                            <b>Programació:</b> Aprenentatge de diversos llenguatges de programació, com ara Java, C#, Swift, JavaScript, etc.
+                            <br> </br>
+                            <b>Programació orientada a objectes:</b> Conceptes avançats de programació orientada a objectes i la seva aplicació en el desenvolupament de programari.
+                            <br> </br>
+                            <b>Desenvolupament d'aplicacions mòbils:</b> Disseny i desenvolupament d'aplicacions per a dispositius mòbils, tant per a Android com per a iOS.
+                            <br> </br>
+                            <b>Desenvolupament web:</b> Adquisició d'habilitats en desenvolupament web utilitzant tecnologies com HTML, CSS, JavaScript, frameworks com React.js, Angular, Vue.js, entre d'altres.
+                            <br> </br>
+                            <b>Bases de dades:</b> Disseny i gestió de bases de dades relacionals i no relacionals, així com la integració de bases de dades en aplicacions.
+                            <br> </br>
+                            <b>Desenvolupament d'interfícies d'usuari:</b> Aprenentatge sobre disseny d'interfícies d'usuari amigables i accessibles per a diferents plataformes i dispositius.
+                            <br> </br>
+                            <b>Control de versions i sistemes de gestió de projectes:</b> Utilització d'eines com Git per al control de versions i metodologies àgils per a la gestió eficient de projectes de desenvolupament de programari.
+                            <br> </br>
+                            <b>Seguretat informàtica:</b> Coneixements bàsics sobre com assegurar les aplicacions contra possibles vulnerabilitats i atacs.
+                            <br> </br>
+                            <b>Desplegament i manteniment d'aplicacions:</b> Aprenentatge sobre com desplegar i mantenir aplicacions en diferents plataformes i entorns.
+                            <br> </br>
+                            <b>Desenvolupament d'aplicacions multiplataforma:</b> Tècniques i eines per desenvolupar aplicacions que es puguin executar en diferents sistemes operatius i dispositius.
+                            <br> </br>
+                            <b>Desenvolupament d'aplicacions empresarials:</b> Aprendre a desenvolupar aplicacions empresarials que compleixin amb els requisits i estàndards de les organitzacions.
+                            <br> </br>
+                            <b>Desenvolupament de videojocs:</b> Introducció al desenvolupament de videojocs, incloent-hi conceptes bàsics de disseny de jocs, gràfics 2D/3D, física de jocs, etc.
+                            <br> </br>
+                            <b>Desenvolupament d'aplicacions al núvol:</b> Aprendre sobre el desenvolupament d'aplicacions que s'executen en entorns de computació al núvol, com AWS, Azure, Google Cloud, etc.
+                            <br> </br>
+                            <b>Qualitat del programari:</b> Coneixements sobre proves de programari, assegurament de la qualitat i pràctiques de desenvolupament de programari orientades a la qualitat.
+                            <br> </br>
+                            <b>Seguretat de la informació:</b> Comprendre els principis de seguretat de la informació i aplicar-los en el desenvolupament de programari segur.
+                            <br> </br>
+                            <b>Desenvolupament d'aplicacions per a dispositius IoT:</b> Introducció al desenvolupament d'aplicacions per a dispositius de l'Internet de les coses (IoT) i sensors.
+                            <br> </br>
+                            <b>Desenvolupament d'aplicacions d'escriptori:</b> Aprendre a desenvolupar aplicacions d'escriptori utilitzant tecnologies com Java, .NET, etc.
+                            </p>
+                            <hr class="separador"></hr>
+                            <hr class="separador"></hr>
+                            <p class="about__paragraph">
+                                <b>Especialització IA & Big Data </b>
+                                <br> </br>
+                                Promoció 2024 - 2025
+                                <br> </br>
+                                <p>Actualment formant-me...</p>
+                            </p>                            
+                        
+                        </details>
+                    </article>
+
+                    <article class="main__icons7">
+                        <img src="./images/motor.svg" class="about__icon">
+                        <details>
+                        <summary>
+                            <h3 class="about__title"> Motors gràfics </h3>
+                        </summary>
+                        <p class="about__paragraph">
+                            Tinc experiència pràctica en el desenvolupament d'aplicacions i jocs utilitzant Unity, una de les plataformes líders en la indústria del desenvolupament de videojocs i aplicacions interactives. He treballat en projectes on he utilitzat les eines i funcions de Unity per crear entorns 2D i 3D, implementar mecàniques de joc, optimitzar el rendiment i realitzar proves de qualitat.
+                        </p>
+                        </details>
+                    </article>
+                    
+                    </div>
+                    
+                    </section>
+                    
+                    <section class="knowledge">
+                        <div class="knowledge__container container">
+                            <div class="knowledge__texts">
+                                <h2 class="subtitle"> Preferències de treball a trobar i la meva situació professional </h2>
+                                <p class="knowledge__paragraph">
+                                <hr class="separador"></hr>
+                                    Resident a l'Eixample, Barcelona. Disposo de permís de conduir i vehicle propi, encara que aquest últim no compleix amb la normativa d'etiqueta verda a causa de la seva antiguitat. Tinc una forta preferència per rols laborals híbrids o remots, ja sigui a temps complet o parcial, que em permetin flexibilitat per desplaçar-me al meu poble i passar temps amb la meva família. Estic obert a participar en bootcamps o formacions presencials a l'empresa amb l'objectiu d'adaptar-me a la seva metodologia de treball i eines, abans de la transició a un model de treball híbrid o remot.
+                                </p>
+                                <hr class="separador"></hr>
+                                <p>
+                                    Busco un entorn laboral on pugui créixer i continuar formant-me professionalment independentment de si és en el desenvolupament web o app, també tant en els apartats front-end, back-end o bdd, amb garanties d'ascensos tant en el lloc com en el salari. El meu interès radica a trobar una empresa que valori el desenvolupament dels seus empleats i ofereixi oportunitats clares de progrés dins de l'organització.
+                                </p>
+                                <a href="#" class="contact">
+                                    Contacta amb mi!
+                                </a>
+                            </div>
+                            <figure class="knowledge__picture">
+                                <img src="./images/face4.jpg"  class="knowledge__img">
+                            </figure>
+                        </div> 
+                    </section>
+                    
+        </main>
+    </body>
+</html>

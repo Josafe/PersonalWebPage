@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Curs CSS </title>
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+       <!-- <script src="js/script.js"></script> -->
+    </head>
+
+    <body>
+        <!-- <h1>Hola mundo</h1> --> 
+
+        <header class="hero">
+            <nav class="nav container"> 
+        
+                <div class="nav__logo">
+                    <h2 class="nav__title"> Multiplatform Application Developer & AI and BIG DATA</h2>
+                </div>
+        
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Home</a>
+                    </li>
+        
+                    <li class="nav__items">
+                        <a href="about.html" class="nav__links">About</a>
+                    </li>
+        
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contact</a>
+                    </li>
+        
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Language</a>
+        
+                        <img src="images\Flag_of_Catalonia.svg" alt="" class="nav__image" id="catalanFlag">
+                        <img src="images\Flag_of_the_United_Kingdom_(1-2).svg" alt= "" class="nav__image" id="englishFlag">
+                        <img src="images\Flag_of_Spain.svg.png" alt= "" class="nav__image" id="castellanFlag"> 
+                        
+                        <script>
+                            // Get the reference to the image element by its ID
+                            var catalanFlag = document.getElementById("catalanFlag");
+                            var englishFlag = document.getElementById("englishFlag");
+                            var castellanFlag = document.getElementById("castellanFlag");
+        
+                            // Add a click event to the image element
+                            catalanFlag.addEventListener("click", function() {
+                                // Redirect to the page in another language
+                                window.location.href = "indexCat.html";
+                            });
+        
+                            englishFlag.addEventListener("click", function() {
+                                // Redirect to the page in another language
+                                window.location.href = "indexEng.html";
+                            });
+                            
+                            castellanFlag.addEventListener("click", function() {
+                                // Redirect to the page in another language
+                                window.location.href = "indexEsp.html";
+                            });
+                        </script>
+                    </li>
+        
+                    <img src="./images/close.svg" alt= "" class="nav__close"> 
+                    
+                </ul>
+        
+                    <div class="nav__menu">
+                        <img src="./images/menu.svg" alt= "" class="nav__img">
+                    </div>
+            </nav>
+        
+            <section class="hero__container container">
+                <h1 class="hero__title"> Summary </h1>
+                <p class="hero__paragraph"> I am a passionate back-end developer with a strong commitment to continue
+                    learning and gaining experience in the field. My adaptability to
+                    different schedules and work methodologies allows me to work effectively in
+                    collaborative teams under pressure. I have an intermediate knowledge of
+                    web programming languages and extensive knowledge in application development and databases, as well as
+                    skills in tools such as Excel and Wordpress. I also hold
+                    a driver's license and I am a dedicated self-learner, both in my work environment and
+                    in personal projects. </p>
+        
+                    <a href="https://drive.google.com/drive/folders/1o2QOglr1ao-qivlEgA9H69tC6qaRLtPg?usp=sharing" class="cta">CV</a>
+                    <a href="https://github.com/Josafe" class="cta">GitHub</a>
+            </section>
+        </header>
+        
+
+        <main>
+            <section class="container about">
+                <img src="./images/person.svg" class="about__icon">
+                <h2 class="subtitle"> What do you want to know about me? </h2>
+            
+                <div class="about__main">
+        
+                    <article class="main__icons">
+                        <img src="./images/computer.svg" class="about__icon">
+                    <details>
+                            <summary>
+                                <h3 class="about__title"> Web Programming Languages </h3>
+                            </summary>
+                        <p class="about__paragraph">  
+                        <b>HTML:</b>
+                            I have intermediate experience in developing web pages using HTML (HyperText Markup Language), the standard language for creating web content. I have worked on projects ranging from creating static web pages to implementing complex and semantic structures using the latest HTML specifications.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>CSS:</b>
+                            I have intermediate experience using CSS (Cascading Style Sheets) for web design and presentation. I have worked on projects that use CSS to apply visual styles to web pages, including creating responsive layouts, animations, and visual effects to enhance the user experience.                  
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>JavaScript:</b>
+                            I have some experience in developing interactive web applications using JavaScript, a high-level and multiparadigm programming language. I have worked on projects that use JavaScript to add interactivity to web pages and manipulate the DOM (Document Object Model).
+                            <hr class="separador"></hr>                        <p class="about__paragraph">  
+                            <b>TypeScript:</b>
+                            I have some experience using TypeScript, a superset of JavaScript that adds optional static typing and other advanced features to the language. I have worked on projects using TypeScript to improve the quality and maintainability of JavaScript code, especially in large codebases and collaborative development teams.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>Angular:</b>
+                            I have some experience developing web applications using Angular, an open-source application development framework developed by Google. I have worked on projects that use Angular to create single-page web applications (SPA) with scalable and modular architectures. I am familiar with key Angular concepts, including component creation, dependency injection, and application state management.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>XML:</b>
+                            I have intermediate experience using XML (eXtensible Markup Language) for representing structured data in a human- and machine-readable format. I have worked on projects that use XML for data exchange between different systems and defining custom markup languages.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">  
+                        <b>PHP:</b>
+                            I have some experience developing dynamic web applications using PHP, a server-side scripting language widely used in web development. I have worked on projects using PHP to create dynamic websites, database-driven web applications, and content management systems (CMS) like WordPress and Drupal.
+                        </p>
+                    </details>
+                    </article>
+        
+                    <article class="main__icons2">
+                        
+                        <img src="./images/mobile.svg" class="about__icon">
+                        <details>
+                            <summary>
+                                <h3 class="about__title"> Programming Languages </h3>
+                            </summary>
+                        <p class="about__paragraph">
+                        <b>Java:</b>
+                            I have solid experience in developing applications using Java, a widely used programming language in the software industry. I have worked on projects ranging from desktop to web applications, using frameworks like Spring and Hibernate. I am familiar with object-oriented programming principles, as well as building scalable and robust applications in Java.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>Python:</b>
+                            I have some experience using Python, a versatile and powerful programming language. I have worked on a variety of projects using Python for scripting, web applications, data analysis, and machine learning. I am familiar with the Python ecosystem, including popular libraries.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>C#:</b>
+                            I have some experience developing applications using C#, a programming language widely used in Microsoft software development. I have worked on projects ranging from desktop to mobile applications and games, using frameworks like .NET and Unity.
+                        </p>
+                        <hr class="separador"></hr>                        <p class="about__paragraph">
+                        <b>Flutter:</b>
+                            I have intermediate experience in developing cross-platform applications using Flutter, an open-source framework developed by Google. I have worked on projects using Flutter to create mobile apps with high-performance and attractive user interfaces. I am familiar with creating custom widgets, managing app state, and integrating external services into Flutter applications.
+                       </p>
+                       <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>Dart:</b>
+                                I have intermediate experience using Dart, the programming language used in Flutter app development. I have worked on projects involving mobile and web app development using Dart, both on the client and server sides. I am familiar with Dart's language features, including its static type system and support for object-oriented and functional programming.
+                        </p>
+                        <hr class="separador"></hr>
+                        <p class="about__paragraph">
+                        <b>Kotlin:</b>
+                            I have some experience in developing Android applications using Kotlin, a modern programming language developed by JetBrains. I have worked on projects using Kotlin to develop native Android applications, leveraging language features such as null safety and concise code. I am familiar with best practices in Kotlin development and its integration with the Android Studio development environment.
+                        </p>
+                        </details>
+                    </article>
+        
+
+                    <article class="main__icons3">
+                        <img src="./images/database.svg" class="about__icon">
+                        <details>
+                            <summary>
+                                <h3 class="about__title"> Databases </h3>
+                            </summary>
+                            <p class="about__paragraph">
+                            <b>PostgreSQL (PSQL):</b>
+                                I have solid experience using PostgreSQL, also known as PSQL, as an open-source relational database management system. I have worked on projects that use PostgreSQL to store and manage data in web application and general software development environments. I am familiar with creating databases, writing advanced SQL queries, configuring indexes to improve performance, and implementing functions and stored procedures in PostgreSQL.
+                            </p>
+                            <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>MySQL:</b>
+                                I have experience using MySQL as a relational database management system. I have worked on projects that use MySQL as the primary database engine, both for web and desktop applications. I am familiar with creating databases, optimizing queries, and managing users and permissions in MySQL environments.
+                            </p>
+                            <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>SQLite:</b>
+                                I have some experience using SQLite as an embedded relational database management system. I have worked on projects that use SQLite in mobile and desktop applications where a lightweight local database is required and easy to integrate. I am familiar with creating tables, manipulating data, and using SQL queries in SQLite environments.
+                            </p>
+                            <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>Firebase:</b>
+                                I have some experience using Firebase as a mobile and web application development platform that includes a real-time database service, Firestore. I have worked on projects that use Firebase to store and synchronize real-time data between clients and servers. I am familiar with setting up databases in Firebase, user authentication, and using other features offered by the platform, such as file storage and cloud functions.
+                            </p>
+                            <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>CloudSQL:</b>
+                                I have some experience using CloudSQL, a fully managed relational database service offered by Google Cloud Platform. I have worked on projects that use CloudSQL to deploy MySQL and PostgreSQL databases in the cloud. I am familiar with configuring and managing database instances in CloudSQL, performing backups, and setting up secure database access.
+                            </p>
+                        </details>
+                    </article>
+                    
+                    <article class="main__icons4">
+                        <img src="./images/terminal.svg" class="about__icon">
+                        <details>
+                            <summary>
+                                <h3 class="about__title"> IDEs </h3>
+                            </summary>
+                            <p class="about__paragraph">
+                            <b>Eclipse:</b>
+                                I have solid experience using Eclipse as an Integrated Development Environment (IDE). I have worked on projects using Eclipse to develop applications in Java and other supported languages. My experience includes project setup, code debugging, version control using plugins like Git, and developing user interfaces using frameworks like SWT and JavaFX.
+                            </p>
+                            <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>IntelliJ IDEA:</b>
+                                I have some experience using IntelliJ IDEA as my main Integrated Development Environment (IDE). I have worked on various projects using IntelliJ, including applications in Java, Kotlin, and other supported languages. I am familiar with its powerful features such as code refactoring, fast class navigation, and integration with build tools like Maven and Gradle.
+                            </p>
+                            <hr class="separador"></hr>                        <p class="about__paragraph">
+                            <b>PyCharm:</b>
+                                I have some experience using PyCharm as my preferred IDE for Python application development. I have worked on projects using PyCharm to develop scripts, web applications, and data science projects in Python. I am familiar with its Python-specific features like intelligent code completion, interactive debugging, and support for virtualenv and conda environments.
+                            </p>
+                            <hr class="separador"></hr>
+                            <p class="about__paragraph">
+                            <b>Visual Studio Code:</b>
+                                I have significant experience using Visual Studio Code as my primary code editor. I have worked on various projects using Visual Studio Code to develop web applications, mobile applications, scripts, and general software development projects. I am familiar with its extensive range of extensions that provide support for a variety of programming languages and technologies.
+                            </p>
+                            <hr class="separador"></hr>
+                            <p class="about__paragraph">
+                            <b>Android Studio:</b>
+                                I have solid experience using Android Studio as my primary IDE for mobile app development on Android. I have worked on projects using Android Studio to create native Android apps, from project setup to designing user interfaces and implementing Android-specific functionalities. I am familiar with development using both Java and Kotlin, as well as using Android development tools like the Android SDK and Android Emulator.
+                            </p>
+                        </details>
+                    </article>
+                    
+          
+                    <div class="about__main">
+
+                        <article class="main__icons5">
+                            <img src="./images/car.svg" class="about__icon">
+                            <details>
+                                <summary>
+                                    <h3 class="about__title"> Mobility Options </h3>
+                                </summary>
+                                <p class="about__paragraph">
+                                    I have a driver's license and my own vehicle, although it is not permitted to drive in central Barcelona due to environmental restrictions. I am willing to travel outside the city if necessary for work. Additionally, I am open to using a company vehicle with a green environmental label if available. Otherwise, I can use my driver's license to travel from my hometown.
+                                </p>
+                            </details>
+                        </article>
+                    
+                        <article class="main__icons6">
+                            <img src="./images/experience.svg" class="about__icon">
+                            <details>
+                                <summary><h3 class="about__title"> Experience & Education </h3></summary>
+                                <p class="about__paragraph">
+                                <b>Cross-Platform Developer:</b>
+                                    Dokuos
+                                    Cross-platform development.
+                                    Assembly and maintenance of smart and interactive panels.
+                                    Maintenance and repair of company and personal equipment.
+                                    Use of Node, JavaScript, PHP, Flutter, Dart, and MySQL for creating a remote management app for interactive kiosks.
+                                    Use of image editing and design tools.
+                                </p>
+                                <hr class="separador"></hr>
+                                <p class="about__paragraph">
+                                    <b>Database Manager:</b>
+                                    Rehau S.A.
+                                    Management of multinational databases (ESP, PT).
+                                    Use of company CRM and ERP.
+                                    Modification of permissions for users, companies, and individuals.
+                                    Database updates according to new stipulated laws.
+                                    Use of Excel to update outdated data.
+                                </p>
+                                <hr class="separador"></hr>
+                                <p class="about__paragraph">
+                                    <b>IT Technician:</b>
+                                    InfoConnexions S.L.
+                                    IT technician services.
+                                    Updating and maintaining OS.
+                                    Installation and maintenance of OS and applications.
+                                    Maintenance and assembly of hardware.
+                                    Management of databases using Excel.
+                                </p>
+                            
+
+                                <hr class="separador"></hr>
+                                <hr class="separador"></hr>
+                                <p class="about__paragraph">
+                                    <b>CFGM Microcomputer Systems and Networks: </b>
+                                    <br> </br>
+                                    Promotion 2017 - 2019
+                                    <br> </br>
+                                    Install, configure, and maintain microcomputer systems, local networks, basic software, and applications.
+                                    <br> </br>
+                                    Execute procedures for data recovery and applications in case of system failures and data loss.
+                                    <br> </br>
+                                    Prepare technical and administrative documentation of the system, and be part of the IT support for organizations or entities of any size and sector.
+                                </p>
+                                <hr class="separador"></hr>
+                                <p class="about__paragraph">
+                                    <b>CFGS Design of Cross-Platform Applications: </b>
+                                    <br> </br>
+                                    Promotion 2020 - 2022
+                                    <br> </br>
+                                    <b>Programming:</b> Learning various programming languages such as Java, C#, Swift, JavaScript, etc.
+                                    <br> </br>
+                                    <b>Object-Oriented Programming:</b> Advanced concepts of object-oriented programming and their application in software development.
+                                    <br> </br>
+                                    <b>Mobile Application Development:</b> Design and development of applications for mobile devices, both for Android and iOS.
+                                    <br> </br>
+                                    <b>Web Development:</b> Acquiring skills in web development using technologies like HTML, CSS, JavaScript, and frameworks like React.js, Angular, Vue.js, among others.
+                                    <br> </br>
+                                    <b>Database:</b> Design and management of relational and non-relational databases, as well as the integration of databases in applications.
+                                    <br> </br>
+                                    <b>User Interface Development:</b> Learning about designing user-friendly and accessible interfaces for different platforms and devices.
+                                    <br> </br>
+                                    <b>Version Control and Project Management Systems:</b> Using tools like Git for version control and agile methodologies for efficient management of software development projects.
+                                    <br> </br>
+                                    <b>Information Security:</b> Basic knowledge on how to secure applications against possible vulnerabilities and attacks.
+                                    <br> </br>
+                                    <b>Deployment and Maintenance of Applications:</b> Learning how to deploy and maintain applications across different platforms and environments.
+                                    <br> </br>
+                                    <b>Cross-Platform Application Development:</b> Techniques and tools for developing applications that can run on different operating systems and devices.
+                                    <br> </br>
+                                    <b>Enterprise Application Development:</b> Learning to develop enterprise applications that meet the requirements and standards of organizations.
+                                    <br> </br>
+                                    <b>Video Game Development:</b> Introduction to video game development, including basic concepts of game design, 2D/3D graphics, game physics, etc.
+                                    <br> </br>
+                                    <b>Cloud Application Development:</b> Learning about the development of applications that run in cloud computing environments, such as AWS, Azure, Google Cloud, etc.
+                                    <br> </br>
+                                    <b>Software Quality:</b> Knowledge about software testing, quality assurance, and quality-oriented software development practices.
+                                    <br> </br>
+                                    <b>Information Security:</b> Understanding the principles of information security and applying them in the development of secure software.
+                                    <br> </br>
+                                    <b>Development of Applications for IoT Devices:</b> Introduction to developing applications for Internet of Things (IoT) devices and sensors.
+                                    <br> </br>
+                                    <b>Desktop Application Development:</b> Learning to develop desktop applications using technologies like Java, .NET, etc.
+                                </p>
+                                <hr class="separador"></hr>
+                                <hr class="separador"></hr>
+                                <p class="about__paragraph">
+                                    <b>Specialization in AI & Big Data </b>
+                                    <br> </br>
+                                    Promotion 2024 - 2025
+                                    <br> </br>
+                                    <p>Currently training...</p>
+                                </p>
+                                </details>
+                            </div>
+                         </article>
+                                
+                                <article class="main__icons7">
+                                    
+                                    <img src="./images/motor.svg" class="about__icon">
+                                    <details>
+                                        <summary>
+                                            <h3 class="about__title"> Graphics Engines </h3>
+                                        </summary>
+                                        <p class="about__paragraph">
+                                            I have practical experience in developing applications and games using Unity, one of the leading platforms in the video game and interactive application development industry. I have worked on projects where I utilized Unity's tools and features to create 2D and 3D environments, implement game mechanics, optimize performance, and conduct quality testing.
+                                        </p>
+                                    </details>
+                                </article>
+                                
+                            </div>
+                    
+                    </section>
+                    
+                    <section class="knowledge">
+                        <div class="knowledge__container container">
+                            <div class="knowledge__texts">
+                                <h2 class="subtitle"> Job Preferences and My Professional Situation </h2>
+                                <p class="knowledge__paragraph">
+                                <hr class="separador"></hr>
+                                    Resident in Eixample, Barcelona. I have a driver's license and my own vehicle, although the latter does not comply with the green label regulations due to its age. I have a strong preference for hybrid or remote work roles, whether full-time or part-time, that allow me flexibility to travel to my hometown and spend time with my family. I am open to participating in boot camps or in-person training at the company to adapt to their work methodology and tools, prior to transitioning to a hybrid or remote work model.
+                                </p>
+                                <hr class="separador"></hr>
+                                <p>
+                                    I am looking for a work environment where I can grow and continue my professional training regardless of whether it is in web or app development, as well as in the areas of front-end, back-end, or databases, with guarantees of promotions in both position and salary. My interest lies in finding a company that values the development of its employees and offers clear opportunities for progress within the organization.
+                                </p>
+                                <a href="#" class="contact">
+                                    Contact me!
+                                </a>
+                            </div>
+                            <figure class="knowledge__picture">
+                                <img src="./images/face4.jpg" class="knowledge__img">
+                            </figure>
+                        </div> 
+                    </section>
+                    
+                </main>
+        </body>
+ </html>
+        
+                
